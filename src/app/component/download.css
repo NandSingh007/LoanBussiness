@@ -1,0 +1,377 @@
+/* .center-div-info {
+  display: flex;
+  justify-content: space-between;
+}
+.first-box {
+  padding: 10px 10px;
+  width: 35%;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+.company-name {
+  display: flex;
+  justify-content: space-between;
+}
+.company-signature {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.transaction {
+  font-size: 22px;
+  padding: 10px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+.note {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 20px 0px;
+  text-transform: capitalize;
+}
+.scanner {
+  text-align: center;
+  font-size: 1rem;
+  color: orange;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 0px;
+  font-weight: 600;
+}
+.transaction-number-sec {
+  text-align: center;
+  color: rgb(248, 161, 0);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.form-control {
+  margin: 2px 0px;
+} */
+/* Base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Flex container */
+.center-div-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Box styles */
+.first-box {
+  padding: 20px;
+  width: 100%;
+  max-width: 35%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.first-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+.company-name,
+.company-signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Transaction styles */
+.transaction {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  padding: 10px 0;
+}
+
+/* Note styles */
+.note {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px 0;
+  color: #555;
+  text-transform: capitalize;
+}
+
+/* Scanner styles */
+.scanner {
+  font-size: 1rem;
+  color: #e74c3c;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+/* Transaction number section */
+.transaction-number-sec {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #f39c12;
+  padding: 10px 0;
+}
+
+/* Form control styles */
+.form-control {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Model styles */
+.model {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .first-box {
+    max-width: 45%; /* Adjust for larger tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .first-box {
+    max-width: 100%;
+  }
+
+  .center-div-info {
+    flex-direction: column;
+  }
+
+  .model {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transaction,
+  .note,
+  .scanner,
+  .transaction-number-sec {
+    font-size: 0.8rem;
+  }
+
+  .model {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.application-form {
+  width: 210mm;
+  height: 237mm;
+  border: 1px solid #717171e0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+
+.form-content {
+  background-color: #e5eef6;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-word;
+  padding: 10px;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  background-color: #ef6522;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.company-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.company-detail {
+  font-size: 26px;
+  font-weight: 600;
+  color: orange;
+  padding: 10px 6px;
+}
+
+.center-div-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.first-box {
+  width: 32%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.info-section {
+  padding: 20px 0;
+}
+
+.info-title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.info-text {
+  margin: 0;
+  font-size: 16px;
+  color: #0f0f0f;
+}
+
+.table-section {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.info-table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-header {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 16px;
+  color: blue;
+}
+
+.table-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.note-section {
+  text-align: center;
+}
+
+.note {
+  font-size: 13px;
+  text-align: center;
+}
+
+.note-highlight {
+  color: orange;
+}
+
+.company-signature {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.signature {
+  font-size: 22px;
+  font-weight: 600;
+  color: Highlight;
+}
+
+.contact-info {
+  color: black;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .application-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-content {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .form-header {
+    font-size: 20px;
+  }
+
+  .company-detail {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .first-box {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .info-title {
+    font-size: 16px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .table-header,
+  .table-cell {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .note {
+    font-size: 11px;
+  }
+
+  .signature {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .contact-info {
+    font-size: 11px;
+  }
+}

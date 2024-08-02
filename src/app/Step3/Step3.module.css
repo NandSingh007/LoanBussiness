@@ -1,0 +1,109 @@
+.loadingCircle {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 14px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #060606;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* General Container */
+.container {
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Heading */
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Alert */
+.alert {
+  color: #d9534f;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+.label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+/* Form Inputs */
+.input {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Button Group */
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btnSecondary {
+  background: #6c757d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnSecondary:hover {
+  background: #5a6268;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btnPrimary {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnPrimary:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
