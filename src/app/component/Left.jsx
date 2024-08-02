@@ -52,7 +52,7 @@ const Left = () => {
             "userIduserIduserIduserIduserIduserIduserIduserIduserIduserIduserId"
           );
           const response = await axios.get(
-            `http://localhost:8000/Statusendpoint/${userId}`
+            `admin.quicklone.com/Statusendpoint/${userId}`
           );
 
           // Log response data
@@ -112,13 +112,10 @@ const Left = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
-        "http://localhost:8000/FetchPackageDataController"
-      );
+      const res = await fetch("admin.quicklone.com/FetchPackageDataController");
       const result = await res.json();
       setData(result);
     };
-
     fetchData();
   }, []);
 

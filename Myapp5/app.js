@@ -25,13 +25,13 @@ var app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "quicklone.com",
     methods: ["POST", "GET", "DELETE", "PUT"]
   }
 });
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:8000"
+  "quicklone.com",
+  "admin.quicklone.com"
   // "http://192.168.29.155:8000"
 ];
 

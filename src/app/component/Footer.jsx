@@ -35,72 +35,53 @@ const Footer = () => {
         <div className={styles.row}>
           <div className={styles.column}>
             <h6 className={styles.title}>
-              <i className="fas fa-gem"></i> Company name
+              <i className="fas fa-gem"></i> QuickLoan
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              We Help to Complete Your Dream , We Provide you{" "}
+              <span
+                style={{ color: "red", fontSize: "16px", fontWeight: "bold" }}
+              >
+                Trustable
+              </span>{" "}
+              <span
+                style={{
+                  color: "InfoText",
+                  fontSize: "16px",
+                  fontWeight: "bold"
+                }}
+              >
+                Scable
+              </span>{" "}
+              and{" "}
+              <span
+                style={{
+                  color: "slateblue",
+                  fontSize: "16px",
+                  fontWeight: "bold"
+                }}
+              >
+                Flaxiable
+              </span>{" "}
+              Amouth of Loan For You Dream
             </p>
           </div>
           <div className={styles.column}>
             <h6 className={styles.title}>Products</h6>
             <p>
               <a href="#!" className={styles.link}>
-                Angular
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                React
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                Vue
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                Laravel
+                Loan
               </a>
             </p>
           </div>
-          <div className={styles.column}>
-            <h6 className={styles.title}>Useful links</h6>
-            <p>
-              <a href="#!" className={styles.link}>
-                Pricing
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                Settings
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                Orders
-              </a>
-            </p>
-            <p>
-              <a href="#!" className={styles.link}>
-                Help
-              </a>
-            </p>
-          </div>
+
           <div className={styles.column}>
             <h6 className={styles.title}>Contact</h6>
             <p>
-              <i className="fas fa-home"></i> New York, NY 10012, US
+              <i className="fas fa-home"></i> 9549880557
             </p>
             <p>
-              <i className="fas fa-envelope"></i> info@example.com
-            </p>
-            <p>
-              <i className="fas fa-phone"></i> + 01 234 567 88
-            </p>
-            <p>
-              <i className="fas fa-print"></i> + 01 234 567 89
+              <i className="fas fa-envelope"></i> Worldpay472@gmail.com
             </p>
           </div>
         </div>
@@ -108,10 +89,8 @@ const Footer = () => {
 
       <div className={styles.copy}>
         <p>
-          © 2021 Copyright:
-          <a href="https://mdbootstrap.com/" className={styles.link}>
-            {" "}
-            MDBootstrap.com
+          <a href="#" className={styles.link}>
+            Worldpay472@gmail.com
           </a>
         </p>
       </div>

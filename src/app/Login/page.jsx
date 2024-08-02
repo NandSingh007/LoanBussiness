@@ -40,7 +40,7 @@ const Login = () => {
       "ddatadatadattadtaatddatadatadattadtaataddatadatadattadtaataa"
     );
     try {
-      const response = await axios.post(`http://localhost:8000/sendotp`, {
+      const response = await axios.post(`admin.quicklone.com/sendotp`, {
         userphone: updatedData.number,
         userotp: updatedData.otp
       });
@@ -79,7 +79,7 @@ const Login = () => {
       const otp = otpHandle();
       const updatedData = { ...data, otp };
       console.log(updatedData, "updatedData");
-      const response = await fetch("http://localhost:8000/loginNumber", {
+      const response = await fetch("admin.quicklone.com/loginNumber", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -113,7 +113,7 @@ const Login = () => {
 
       const updatedData = { ...data, id: userId, number: data.number };
 
-      const response = await fetch("http://localhost:8000/update-otp", {
+      const response = await fetch("admin.quicklone.com/update-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -147,9 +147,7 @@ const Login = () => {
           height: "100vh"
         }}
       >
-        <p>
-          <SpinnerSec />
-        </p>
+        <SpinnerSec />
       </div>
     );
   }

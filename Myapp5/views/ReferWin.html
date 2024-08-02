@@ -321,7 +321,7 @@
     const formData = {
       child, firstParent, SecondParent ,ThirdParent 
     };
-    fetch('http://localhost:8000/ReferWinDataController', {
+    fetch('admin.quicklone.com/ReferWinDataController', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -351,7 +351,7 @@ const submitForm2 = async(event)=> {
     const formData = {
       FixedAmount
     };
-    fetch('http://localhost:8000/ReferWinDataFixedAmt', {
+    fetch('admin.quicklone.com/ReferWinDataFixedAmt', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         // console.log(formData)
         // Send a POST request to delete the slider image
-        fetch(`http://localhost:8000/DeletereReferWin`, {
+        fetch(`admin.quicklone.com/DeletereReferWin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         // console.log(formData)
         // Send a POST request to delete the slider image
-        fetch(`http://localhost:8000/DeletereReferWinsecond`, {
+        fetch(`admin.quicklone.com/DeletereReferWinsecond`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

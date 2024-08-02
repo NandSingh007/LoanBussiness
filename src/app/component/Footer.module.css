@@ -1,7 +1,7 @@
 .footer {
   background-color: #f1f1f1;
   color: #6c757d;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -14,8 +14,11 @@
 }
 
 .connect {
-  margin-right: 2rem;
+  margin-right: 0.5rem;
   display: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(177, 83, 25);
 }
 
 .socialLinks {
@@ -44,6 +47,7 @@
   flex: 1;
   margin: 1rem;
   min-width: 200px;
+  color: rgb(63, 61, 61);
 }
 
 .title {

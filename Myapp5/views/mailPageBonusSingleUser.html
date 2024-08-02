@@ -171,7 +171,7 @@
         Id
       };
       
-    fetch('http://localhost:8000/SingleUserMailEdit', {
+    fetch('admin.quicklone.com/SingleUserMailEdit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function async() {
           Id,UserId
         };
         console.log(formData)
-        fetch(`http://localhost:8000/deleteSIngleMailUser`, {
+        fetch(`admin.quicklone.com/deleteSIngleMailUser`, {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'
