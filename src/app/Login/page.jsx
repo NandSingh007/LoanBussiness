@@ -35,15 +35,14 @@ const Login = () => {
   }, [router]);
 
   const SendOtp = async (updatedData) => {
-    console.log(
-      updatedData,
-      "ddatadatadattadtaatddatadatadattadtaataddatadatadattadtaataa"
-    );
     try {
-      const response = await axios.post(`admin.quicklone.com/sendotp`, {
-        userphone: updatedData.number,
-        userotp: updatedData.otp
-      });
+      const response = await axios.post(
+        `http://admin.http://quicklone.com/sendotp`,
+        {
+          userphone: updatedData.number,
+          userotp: updatedData.otp
+        }
+      );
       if (response.data) {
         console.log("Data Sent Successfully", response.data);
       }
@@ -79,13 +78,16 @@ const Login = () => {
       const otp = otpHandle();
       const updatedData = { ...data, otp };
       console.log(updatedData, "updatedData");
-      const response = await fetch("admin.quicklone.com/loginNumber", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(updatedData)
-      });
+      const response = await fetch(
+        "http://admin.http://quicklone.com/loginNumber",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(updatedData)
+        }
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -113,13 +115,16 @@ const Login = () => {
 
       const updatedData = { ...data, id: userId, number: data.number };
 
-      const response = await fetch("admin.quicklone.com/update-otp", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(updatedData)
-      });
+      const response = await fetch(
+        "http://admin.http://quicklone.com/update-otp",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(updatedData)
+        }
+      );
 
       if (!response.ok) {
         setData({ number: "", otp: "" });

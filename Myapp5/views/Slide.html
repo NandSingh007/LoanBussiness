@@ -199,7 +199,7 @@
       
         console.log(formData)
         // Fetch API to send the FormData object
-        fetch(`admin.quicklone.com/updateSlider`, {
+        fetch(`http://admin.http://quicklone.com/updateSlider`, {
             method: 'POST',
             body: formData ,
         })
@@ -236,7 +236,7 @@
             formData.append("SliderName", Name);
             formData.append("SliderImg", slideImg);
             // Fetch API to send the FormData object
-            fetch(`admin.quicklone.com/uploadimg`, {
+            fetch(`http://admin.http://quicklone.com/uploadimg`, {
                 method: 'POST',
                 body: formData
             })
@@ -267,7 +267,7 @@
             sliderImageId
         };
         // Send a POST request to delete the slider image
-        fetch(`admin.quicklone.com/SliderimgDelete`, {
+        fetch(`http://admin.http://quicklone.com/SliderimgDelete`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

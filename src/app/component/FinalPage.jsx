@@ -243,7 +243,7 @@ const FinalPage = () => {
           const decoded = jwtDecode(token);
           const userId = decoded.userId;
           const response = await axios.get(
-            `admin.quicklone.com/Statusendpoint/${userId}`
+            `http://admin.http://quicklone.com/Statusendpoint/${userId}`
           );
 
           setStatusOne(response.data.statusOne);
@@ -282,7 +282,7 @@ const FinalPage = () => {
         const userId = decoded.userId;
 
         const response = await axios.get(
-          `admin.quicklone.com/personalDetailsOfUser/${userId}`
+          `http://admin.http://quicklone.com/personalDetailsOfUser/${userId}`
         );
         setPersonalDetails(response.data);
       } catch (err) {
@@ -297,7 +297,7 @@ const FinalPage = () => {
     const fetchCompanyProfile = async () => {
       try {
         const response = await axios.get(
-          "admin.quicklone.com/fetchCompanyProfile"
+          "http://admin.http://quicklone.com/fetchCompanyProfile"
         );
         setCompanyProfile(response.data.data);
       } catch (err) {
@@ -322,7 +322,7 @@ const FinalPage = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `admin.quicklone.com/getSecurityFeeDataWithStatusOneFront/${userId}`
+            `http://admin.http://quicklone.com/getSecurityFeeDataWithStatusOneFront/${userId}`
           );
           setSecurityData(response.data);
         } catch (error) {
@@ -339,7 +339,7 @@ const FinalPage = () => {
     const fetchCompanyProfile = async () => {
       try {
         const response = await axios.get(
-          "admin.quicklone.com/CompanyProfileScn"
+          "http://admin.http://quicklone.com/CompanyProfileScn"
         );
 
         setPaymentQRCharges1(response.data[0].paymentQRCharges1); // Assuming only one company profile is returned

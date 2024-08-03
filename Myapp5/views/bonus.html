@@ -168,7 +168,7 @@
         };
 
         $.ajax({
-          url: 'admin.quicklone.com/LoanTypes',
+          url: 'http://admin.http://quicklone.com/LoanTypes',
           method: 'POST',
           contentType: 'application/json',
           data: JSON.stringify(formData),
@@ -202,7 +202,7 @@
         const id = $('#editLoanId').val();
 
         $.ajax({
-          url: `admin.quicklone.com/editlontype/${id}`,
+          url: `http://admin.http://quicklone.com/editlontype/${id}`,
           method: 'PUT',
           contentType: 'application/json',
           data: JSON.stringify(formData),
@@ -225,7 +225,7 @@
         const id = $('#deleteModal').data('id');
 
         $.ajax({
-          url: `admin.quicklone.com/deleteloan/${id}`,
+          url: `http://admin.http://quicklone.com/deleteloan/${id}`,
           method: 'DELETE',
           success: function (response) {
             console.log('Loan deleted successfully:', response);

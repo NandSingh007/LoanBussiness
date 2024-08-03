@@ -63,7 +63,9 @@ router.get("/admin_role", authMiddleware, (req, res) => {
 
 router.get("/player", authMiddleware, async (req, res) => {
   try {
-    const profileResponse = await fetch("admin.quicklone.com/userDetailData");
+    const profileResponse = await fetch(
+      "http://admin.http://quicklone.com/userDetailData"
+    );
 
     // Check if the response is JSON
     const contentType = profileResponse.headers.get("content-type");
@@ -90,7 +92,7 @@ router.get("/user/:userId", authMiddleware, async (req, res) => {
   try {
     const userId = req.params.userId;
     const apiResponse = await fetch(
-      `admin.quicklone.com/personalDetailsOfUser/${userId}`
+      `http://admin.http://quicklone.com/personalDetailsOfUser/${userId}`
     );
 
     // Check if the response is okay and content is JSON
@@ -130,7 +132,7 @@ router.get("/users-profile", authMiddleware, (req, res) => {
 router.get("/with_re", async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getProcessingFeeDataWithStatusZero"
+      "http://admin.http://quicklone.com/getProcessingFeeDataWithStatusZero"
     );
     const profile = await profileResponse.json();
     res.render("with_re", {
@@ -147,7 +149,7 @@ router.get("/with_re", async (req, res) => {
 router.get("/with_app", authMiddleware, async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getProcessingFeeDataWithStatusOne"
+      "http://admin.http://quicklone.com/getProcessingFeeDataWithStatusOne"
     );
     const profile = await profileResponse.json();
     console.log(profile, "profile  1");
@@ -165,7 +167,7 @@ router.get("/with_app", authMiddleware, async (req, res) => {
 router.get("/with_rej", authMiddleware, async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getProcessingFeeDataWithStatusTwo"
+      "http://admin.http://quicklone.com/getProcessingFeeDataWithStatusTwo"
     );
     const profile = await profileResponse.json();
     console.log(profile, "profile  2");
@@ -202,7 +204,9 @@ router.get("/pages-contact", (req, res) => {
 router.get("/Bonus", async (req, res) => {
   // res.render("bonus", { title: "Bonus", currentRoute: req.url });
   try {
-    const response = await axios.get("admin.quicklone.com/GetLoanTypes"); // Replace with your API endpoint
+    const response = await axios.get(
+      "http://admin.http://quicklone.com/GetLoanTypes"
+    ); // Replace with your API endpoint
     const data = response.data;
     // console.log(data);
     res.render("Bonus", {
@@ -222,7 +226,7 @@ router.get("/GetLoanTypes", GetLoanTypes);
 router.get("/Refer", async (req, res) => {
   try {
     const response = await axios.get(
-      "admin.quicklone.com/FetchPackageDataController"
+      "http://admin.http://quicklone.com/FetchPackageDataController"
     ); // Replace with your API endpoint
     const data = response.data;
 
@@ -242,7 +246,7 @@ router.delete("/DeletePackage/:id", DeletePackage);
 router.get("/rech_pe", async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/fetchCompanyProfile"
+      "http://admin.http://quicklone.com/fetchCompanyProfile"
     );
     const profileData = await profileResponse.json();
 
@@ -293,7 +297,7 @@ router.post(
 router.get("/sec_re", async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getSecurityFeeDataWithStatusZero"
+      "http://admin.http://quicklone.com/getSecurityFeeDataWithStatusZero"
     );
     const profile = await profileResponse.json();
     res.render("security_req", {
@@ -310,7 +314,7 @@ router.get("/sec_re", async (req, res) => {
 router.get("/sec_app", async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getSecurityFeeDataWithStatusOne"
+      "http://admin.http://quicklone.com/getSecurityFeeDataWithStatusOne"
     );
     const profile = await profileResponse.json();
     console.log(profile, "profile  1");
@@ -328,7 +332,7 @@ router.get("/sec_app", async (req, res) => {
 router.get("/sec_rej", async (req, res) => {
   try {
     const profileResponse = await fetch(
-      "admin.quicklone.com/getSecurityFeeDataWithStatusTwo"
+      "http://admin.http://quicklone.com/getSecurityFeeDataWithStatusTwo"
     );
     const profile = await profileResponse.json();
     console.log(profile, "profile  2");
