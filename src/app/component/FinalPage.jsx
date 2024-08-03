@@ -37,8 +37,8 @@ const Header = styled.div`
 const LoanAmount = styled.span`
   background-color: ${(props) => (props.active ? "#bdb6b8" : "#ff5722")};
   border-radius: 10px;
-  padding: 6px 15px;
-  font-size: 1.3rem;
+  padding: 4px 10px;
+  font-size: 0.7rem;
   margin: 0 10px;
   color: black;
   font-weight: 600;

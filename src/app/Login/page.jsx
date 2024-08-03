@@ -125,7 +125,7 @@ const Login = () => {
       const responseData = await response.json();
       Cookies.set("newtoken", responseData.token, { expires: 30 });
       Cookies.remove("token");
-      router.push("/");
+      window.location.reload(); // Reload the current page
       setData({ number: "", otp: "" });
     } catch (error) {
       setError(error.message);

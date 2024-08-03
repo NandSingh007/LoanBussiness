@@ -88,11 +88,9 @@ const Footer = () => {
       </section>
 
       <div className={styles.copy}>
-        <p>
-          <a href="#" className={styles.link}>
-            Worldpay472@gmail.com
-          </a>
-        </p>
+        <a href="#" className={styles.link}>
+          Worldpay472@gmail.com
+        </a>
       </div>
     </footer>
   );

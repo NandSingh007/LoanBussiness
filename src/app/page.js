@@ -32,7 +32,7 @@ export default function Home() {
     <main>
       <div className="container-fluid">
         <div className="row">
-          <Suspense
+          {/* <Suspense
             fallback={
               <>
                 <SpinnerSec />
@@ -40,18 +40,18 @@ export default function Home() {
             }
           >
             {isAuthenticated ? (
-              <>
-                <Header userId={userId} />
-                <MainBody userId={userId} />
-                <Footer />
-              </>
+              <> */}
+          <Header userId={userId} />
+          <MainBody userId={userId} />
+          <Footer />
+          {/* </>
             ) : (
               <Login
                 setIsAuthenticated={setIsAuthenticated}
                 setUserId={setUserId}
               />
             )}
-          </Suspense>
+          </Suspense> */}
         </div>
       </div>
     </main>
