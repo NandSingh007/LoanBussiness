@@ -29,11 +29,7 @@ const io = new Server(server, {
     methods: ["POST", "GET", "DELETE", "PUT"]
   }
 });
-const allowedOrigins = [
-  "https://quicklone.com",
-  "https://admin.quicklone.com"
-  // "http://192.168.29.155:8000"
-];
+const allowedOrigins = ["https://quicklone.com", "https://admin.quicklone.com"];
 
 // CORS options
 const corsOptions = {
