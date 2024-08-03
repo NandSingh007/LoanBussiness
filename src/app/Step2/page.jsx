@@ -58,7 +58,7 @@ const Step2 = ({ onNext, onPrev, phone, email }) => {
 
     try {
       const response = await axios.post(
-        "http://admin.http://quicklone.com/step2Details",
+        "https://admin.quicklone.com/step2Details",
         formDataToSend,
         {
           headers: {

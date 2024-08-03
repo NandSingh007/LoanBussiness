@@ -191,7 +191,7 @@ document.getElementById('imageFormupdate').addEventListener('submit', function (
     formData.append("NoticeImageIds", sliderImageIds); // Append the sliderImageIds here
   // console.log(formData)
     // Fetch API to send the FormData object
-    fetch(`http://admin.http://quicklone.com/NoticeUpdateImg`, {
+    fetch(`https://admin.quicklone.com/NoticeUpdateImg`, {
         method: 'POST',
         body: formData
     })
@@ -224,7 +224,7 @@ document.getElementById('imageFormupdate').addEventListener('submit', function (
             formData.append("NoticeName", Name);
             formData.append("NoticeImg", NoticeImg);
             // Fetch API to send the FormData object
-            fetch(`http://admin.http://quicklone.com/NoticeSlider`, {
+            fetch(`https://admin.quicklone.com/NoticeSlider`, {
                 method: 'POST',
                 body: formData
             })
@@ -248,7 +248,7 @@ location.reload()
           NticeinnerId,
             sliderImageIds
         };
-        fetch(`http://admin.http://quicklone.com/NoticeDelteImg`, {
+        fetch(`https://admin.quicklone.com/NoticeDelteImg`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

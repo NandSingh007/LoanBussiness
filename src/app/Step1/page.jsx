@@ -43,7 +43,7 @@ const Step1 = ({ onNext }) => {
     try {
       // Send the formData to the backend API
       const response = await axios.post(
-        "http://admin.http://quicklone.com/step1Details",
+        "https://admin.quicklone.com/step1Details",
         formData
       );
 

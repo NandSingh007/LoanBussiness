@@ -43,7 +43,7 @@ const DownloadButton = () => {
           const decoded = jwtDecode(token);
           const userId = decoded.userId;
           const response = await axios.get(
-            `http://admin.http://quicklone.com/Statusendpoint/${userId}`
+            `https://admin.quicklone.com/Statusendpoint/${userId}`
           );
 
           setStatusOne(response.data.statusOne);
@@ -70,7 +70,7 @@ const DownloadButton = () => {
     const fetchSecurityData = async () => {
       try {
         const response = await axios.get(
-          "http://admin.http://quicklone.com/fetchCompanyProfile"
+          "https://admin.quicklone.com/fetchCompanyProfile"
         );
         setSecurityData(response.data);
       } catch (error) {
@@ -84,7 +84,7 @@ const DownloadButton = () => {
     const fetchCompanyProfile = async () => {
       try {
         const response = await axios.get(
-          "http://admin.http://quicklone.com/CompanyProfileScn"
+          "https://admin.quicklone.com/CompanyProfileScn"
         );
 
         console.log(

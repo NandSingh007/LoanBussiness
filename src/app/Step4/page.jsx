@@ -18,7 +18,7 @@
 //   useEffect(() => {
 //     const fetchLoanTypes = async () => {
 //       try {
-//         const response = await axios.get("http://admin.http://quicklone.com/GetLoanTypes");
+//         const response = await axios.get("https://admin.quicklone.com/GetLoanTypes");
 //         console.log(response.data, "response.dataresponse.data");
 //         setLoanTypes(response.data);
 //       } catch (error) {
@@ -56,7 +56,7 @@
 //     e.preventDefault();
 //     try {
 //       const response = await axios.post(
-//         "http://admin.http://quicklone.com/stepfourdetails",
+//         "https://admin.quicklone.com/stepfourdetails",
 //         formData
 //       );
 //       console.log("Form submitted successfully:", response.data);
@@ -176,7 +176,7 @@ const Step4 = ({ onPrev, onSubmit, phone, email }) => {
     const fetchLoanTypes = async () => {
       try {
         const response = await axios.get(
-          "http://admin.http://quicklone.com/GetLoanTypes"
+          "https://admin.quicklone.com/GetLoanTypes"
         );
         setLoanTypes(response.data);
       } catch (error) {
@@ -214,7 +214,7 @@ const Step4 = ({ onPrev, onSubmit, phone, email }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://admin.http://quicklone.com/stepfourdetails",
+        "https://admin.quicklone.com/stepfourdetails",
         formData
       );
       console.log("Form submitted successfully:", response.data);

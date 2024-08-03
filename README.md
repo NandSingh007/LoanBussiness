@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://admin.http://quicklone.com](http://admin.http://quicklone.com) with your browser to see the result.
+Open [https://admin.quicklone.com](https://admin.quicklone.com) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
